@@ -13,7 +13,6 @@ export const MovieProvider = ({ children }) => {
     //     }
     //  }, [])
     useEffect(() => {
-        debugger
         localStorage.setItem("favorites", JSON.stringify(favorites))
     }, [favorites])
 
@@ -30,8 +29,6 @@ export const MovieProvider = ({ children }) => {
         }
     }, []);
 
-
-    
 
     const addToFavorites = (movie) => {
         setFavorites(prev => [...prev, movie])

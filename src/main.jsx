@@ -6,10 +6,11 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* When deploying under a sub‑path set `basename` so the router
-        strips the prefix from location.pathname.  vite.config.js already
-        uses the same base, so the URLs for assets are correct as well. */}
-    <BrowserRouter basename="/MovieaApp-ReactProject">
+    {/* Use the same base that Vite knows about (import.meta.env.BASE_URL).
+        That value comes from `vite.config.js` and will be "/MovieaApp-ReactProject/"
+        in your local dev/testing scenario but just "/" in production on Vercel.
+        When the router sees a basename it strips it off before matching routes. */}
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <App />
     </BrowserRouter>
 

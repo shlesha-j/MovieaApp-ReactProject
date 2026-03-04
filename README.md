@@ -1,12 +1,49 @@
-# React + Vite
+# 🎬 Movie App – React Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔗 **Live Demo:** https://moviea-app-react-project.vercel.app/
 
-Currently, two official plugins are available:
+A responsive Movie Search Application built using **React.js** that allows users to search and explore movies dynamically using an external movie API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✅ Search movies in real-time  
+✅ Fetch data from Movie API  
+✅ Display movie posters, title, and release year  
+✅ Responsive design  
+✅ Clean and modern UI  
+✅ Error handling for empty searches  
+✅ Deployed on Vercel  
+
+---
+
+## 🛠️ Tech Stack
+
+- ⚛️ React.js
+- 📡 Fetch API / Axios
+- 🎨 CSS
+- 🌐 External Movie API (e.g., OMDb API / TMDB API)
+- ▲ Vercel (Deployment)
+
+---
+
+## 🔍 How It Works
+
+1. User types a movie name
+2. API request is sent
+3. Data is fetched and stored in state
+4. Movies are rendered dynamically using `.map()`
+5. If no results → error message is shown
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+npm install
+npm start
+
+

@@ -6,7 +6,10 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    {/* When deploying under a sub‑path set `basename` so the router
+        strips the prefix from location.pathname.  vite.config.js already
+        uses the same base, so the URLs for assets are correct as well. */}
+    <BrowserRouter basename="/MovieaApp-ReactProject">
       <App />
     </BrowserRouter>
 
